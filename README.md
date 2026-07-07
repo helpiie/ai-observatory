@@ -22,3 +22,13 @@ AI Observatory explores how we can observe:
 ## Status
 
 Early research prototype and documentation project.
+
+## Vision
+
+AI systems should not only produce outputs.
+
+They should provide evidence about:
+
+- why actions happened
+- under what conditions they happened
+- whether humans still had meaningful ability to intervene
