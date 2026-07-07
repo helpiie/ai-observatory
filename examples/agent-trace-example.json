@@ -1,1 +1,50 @@
-
+{
+  "trace_id": "trace-2026-001",
+  "agent": {
+    "name": "procurement-assistant",
+    "version": "0.1.0",
+    "type": "autonomous_workflow_agent"
+  },
+  "execution_context": {
+    "started_at": "2026-07-07T09:00:00Z",
+    "environment": "production",
+    "authorization_scope": [
+      "read_supplier_data",
+      "analyze_risk",
+      "prepare_recommendation"
+    ]
+  },
+  "decision_event": {
+    "event_id": "decision-001",
+    "timestamp": "2026-07-07T09:02:14Z",
+    "action": "recommend_supplier",
+    "input_sources": [
+      "supplier_database",
+      "risk_assessment_service",
+      "market_data"
+    ],
+    "reasoning_summary": "Supplier selected based on cost, delivery history, and risk score."
+  },
+  "control_state": {
+    "human_review_required": true,
+    "human_reviewer": "procurement_manager",
+    "intervention_window": "active",
+    "reversibility": "high"
+  },
+  "runtime_checks": {
+    "authorization_valid": true,
+    "data_freshness_valid": true,
+    "environment_changed": false,
+    "policy_constraints_satisfied": true
+  },
+  "evidence": {
+    "decision_logged": true,
+    "inputs_recorded": true,
+    "permissions_verified": true,
+    "human_control_available": true
+  },
+  "outcome": {
+    "status": "awaiting_human_approval",
+    "next_action": "human_review"
+  }
+}
