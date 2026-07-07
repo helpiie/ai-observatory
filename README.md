@@ -32,3 +32,18 @@ They should provide evidence about:
 - why actions happened
 - under what conditions they happened
 - whether humans still had meaningful ability to intervene
+
+## Example Runtime Trace
+
+The project includes an example AI agent execution trace showing how runtime evidence could be captured.
+
+See:
+
+`examples/agent-trace-example.json`
+
+The goal is to explore how AI systems can provide visibility into:
+
+- decisions
+- permissions
+- execution context
+- human intervention capability
