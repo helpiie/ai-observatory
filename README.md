@@ -1,90 +1,146 @@
-# AI Observatory
+# NextOne Observatory / AI Observatory
 
-An experimental research project exploring AI agent observability, runtime governance, and evidence of human control.
+**AI runtime governance, evidence of control, observability, and human authority at the point of execution.**
 
-## Overview
+NextOne Observatory is an independent research and prototype direction exploring how AI-enabled and agentic systems can remain observable, controllable, reconstructable, and human-governable while they are operating.
 
-As AI systems become more autonomous, understanding their behaviour during execution becomes increasingly important.
+The core question is:
 
-AI Observatory explores how we can observe:
+> Can an organization prove that an AI-enabled system was used under valid, monitored, human-controllable and reconstructable conditions when its output influenced consequence?
 
-* AI agent decisions
-* runtime context
-* execution boundaries
-* authorization conditions
-* human intervention opportunities
+This repository develops concepts, examples, and prototype documentation around runtime governance for AI-supported workflows.
 
-## Motivation
+---
 
-Traditional AI governance often focuses on policies, documentation, approval processes, and post-event analysis.
+## Why this exists
 
-AI Observatory explores a different question:
+AI governance is often discussed through policies, approvals, model documentation, audits, and post-event review.
 
-> Can we demonstrate that meaningful human control still exists while an AI system is operating?
+Those layers matter, but they do not fully answer the operational question:
 
-The project investigates how runtime evidence can help make AI-enabled workflows more observable, explainable, and controllable.
+> Was control still real when the AI-supported workflow moved toward consequence?
 
-## Research Questions
+An audit trail may prove participation, but not control.
 
-* Can we measure meaningful human control during AI execution?
-* How can AI systems provide evidence about their decisions?
-* What signals indicate that control is degrading before failure occurs?
-* How can systems know when to continue, escalate, hold, or refuse an action?
+NextOne Observatory focuses on the runtime layer where AI outputs, agentic workflows, permissions, evidence, human authority, and operational consequences meet.
 
-## Core Concepts
+---
 
-The project explores:
+## Research focus
 
-* runtime governance
-* evidence of control
-* decision context
-* authorization validity
-* intervention capability
-* execution boundaries
+The project explores how AI systems and organizations can reason about:
 
-## Vision
+- who or what is acting
+- under which authority
+- under which current conditions
+- with what evidence
+- what the system can observe, recommend, write, trigger, change, or make real
+- whether authorization is still valid now
+- whether human intervention is still meaningful before consequence
+- whether the system should allow, hold, escalate, revalidate, refuse, or fail closed
 
-AI systems should not only produce outputs.
+---
 
-They should provide evidence about:
+## Core concepts
 
-* why actions happened
-* under what conditions they happened
-* what permissions were active
-* whether humans still had meaningful ability to intervene
+This repository develops and documents concepts including:
 
-## Example Runtime Trace
+- runtime governance
+- evidence of control
+- human-in-control
+- authority continuity
+- runtime-validity objects
+- intervention viability
+- governance surface drift
+- permission and authorization drift
+- safe reliance
+- observability versus control
+- ALLOW / HOLD / ESCALATE / REFUSE runtime states
 
-The project includes an example AI agent execution trace showing how runtime evidence could be captured.
+---
 
-See:
+## Article 26 as runtime governance
 
-`examples/agent-trace-example.json`
+NextOne Observatory includes public research on Article 26 of the EU AI Act as an operational deployer responsibility problem.
 
-The example explores visibility into:
+The central operating sentence of that work is:
 
-* decisions
-* permissions
-* execution context
-* human intervention capability
+> A deployer should be able to prove that a high-risk AI system was used under valid, monitored, human-controllable and reconstructable conditions when its output influenced consequence.
+
+Public reference:
+
+- Article 26 as Runtime Governance  
+  https://nextone.ie/observatory/article26/
+
+---
+
+## External reference: StratoAtlas Pressure Signal
+
+This work is connected to a published named contribution to StratoAtlas.
+
+Published reference:
+
+- Runtime Authorization History Does Not Prove Runtime Control  
+  https://stratoatlas.com/pressure/runtime-authorization-history-does-not-prove-control
+
+The contribution focuses on runtime authorization, authority-state continuity, and evidence of control.
+
+It distinguishes between:
+
+1. declarative control
+2. the authority object
+3. the runtime-validity object
+4. evidence of control
+
+It also develops the distinction between authorization-history evidence and evidence that valid authority remained causally connected to execution.
+
+The contribution was integrated into StratoAtlas' Helsing — Declarative Control structural map:
+
+- Helsing — Declarative Control  
+  https://stratoatlas.com/maps/helsing/declarative-control
+
+---
+
+## Example runtime trace
+
+The repository includes an example AI agent execution trace showing how runtime evidence might be represented:
+
+- examples/agent-trace-example.json
+
+The example explores visibility into decisions, permissions, execution context, authorization conditions, and human intervention capability.
+
+---
+
+## Prototype direction
+
+The long-term direction is to explore how AI-supported systems could expose runtime governance signals such as:
+
+- active authority state
+- current evidence state
+- permission and tool-use boundaries
+- admissibility before execution
+- escalation paths
+- human intervention windows
+- control degradation signals
+- reconstructable decision context
+- runtime state transitions
+
+This is not only about whether an AI system produced an output.
+
+It is about whether the organization can prove why that output was allowed to matter.
+
+---
 
 ## Status
 
-Early research prototype and documentation project.
+Independent research and early prototype documentation.
 
-Current release:
+This repository is not legal advice, certification guidance, or a compliance product.
 
-`v0.1.0 – Conceptual Runtime Governance Model`
+It is a public research and systems-thinking workspace for AI runtime governance, evidence of control, and human authority at execution.
 
-The project is intended as an open exploration of practical approaches to AI observability and runtime control.
+---
 
-## Future Exploration
+## Guiding sentence
 
-Potential future areas include:
-
-* agent event schemas
-* runtime monitoring concepts
-* decision timelines
-* control state modelling
-* escalation mechanisms
-* evidence collection patterns
+**Brilliance without control is exposure.**
